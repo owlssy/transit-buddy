@@ -13,13 +13,13 @@ warns you if you're on the wrong bus or missed your stop.
 | | |
 | --- | --- |
 | **Home** | Destination search, current location, nearby stops, recent destinations |
-| **Route Results** | Multiple trip options tagged ⭐ Stress-Free / ⚡ Fastest / 🚶 Least Walking |
+| **Route Results** | Multiple trip options tagged Stress-Free / Fastest / Least Walking |
 | **Navigation** | Live map, live bus position, encoded polyline of the route, vertical progress timeline |
 | **Ride Companion** | Large "one instruction at a time" cards guiding walk → wait → ride → alight |
 | **Wrong Bus Detection** | Compares nearby vehicle positions to the selected route |
 | **Missed Stop Detection** | Detects when the bus is past the alight point and reroutes |
 | **Stress-Free Score** | Weighted algorithm across transfers, walking, wait, delay, and duration |
-| **Confidence Indicator** | 🟢 / 🟡 / 🔴 based on real-time predictions, delays, transfer buffer |
+| **Confidence Indicator** | Based on real-time predictions, delays, transfer buffer |
 | **Notifications** | Local phase-transition notifications ("Board now", "Your stop is next", "Exit here") |
 | **Dark mode** | Automatic based on system theme |
 
