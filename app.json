@@ -1,0 +1,65 @@
+{
+  "expo": {
+    "name": "TransitBuddy",
+    "slug": "transit-buddy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "scheme": "transitbuddy",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#100f0d"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.transitbuddy.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TransitBuddy uses your location to find nearby stops and guide you through transit trips.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "TransitBuddy uses your location in the background so it can notify you about upcoming stops even when the app is closed."
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#100f0d"
+      },
+      "package": "com.transitbuddy.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "TransitBuddy uses your location to track your trip and guide you off at the right stop."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#25b890"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "onebusawayApiKey": "",
+      "onebusawayBaseUrl": "https://api.pugetsound.onebusaway.org"
+    }
+  }
+}
