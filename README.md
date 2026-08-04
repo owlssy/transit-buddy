@@ -184,18 +184,3 @@ you hit a 404 or unexpected shape:
 
 Response TypeScript types live in [src/types/index.ts](src/types/index.ts) —
 adjust these to match your server's actual shape.
-
-## Known Limitations / Future Work
-
-- **Multi-leg trips**: the planner only supports one transit leg. Wiring up
-  OpenTripPlanner would enable real transfers.
-- **Android maps**: `react-native-maps` on Android needs a Google Maps API
-  key configured in `app.json > android.config.googleMaps.apiKey`. iOS uses
-  Apple Maps by default and works out of the box.
-- **Background tracking**: current implementation uses foreground location
-  only. Extending to background would require enabling background modes and
-  handling app-lifecycle transitions.
-- **Real geocoding**: destination search currently searches OBA stops. A real
-  geocoder (Mapbox / Google Places) can be dropped into
-  [src/hooks/useStopSearch.ts](src/hooks/useStopSearch.ts) without other
-  changes.
